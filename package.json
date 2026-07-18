@@ -1,0 +1,21 @@
+{
+  "name": "snapmart-full-stack",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "shuaib",
+    "microservice"
+  ],
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "install": "cd Frontend && npm install && cd ../backend && npm install",
+    "dev:server": "cd backend && npm run dev",
+    "dev:client": "cd Frontend && npm run dev",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "build": "cd Frontend && npm run build"
+  },
+  "dependencies": {
+    "concurrently": "^10.0.3"
+  }
+}

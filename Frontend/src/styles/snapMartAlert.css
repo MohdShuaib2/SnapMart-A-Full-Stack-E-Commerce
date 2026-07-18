@@ -1,0 +1,67 @@
+.snap-alert-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 80px 20px 20px;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.snap-alert {
+  width: min(420px, 100%);
+  padding: 26px;
+  border: 1px solid rgba(249, 115, 22, 0.35);
+  border-radius: 12px;
+  background: #18181b;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
+  color: #ffffff;
+}
+
+.snap-alert h3 {
+  margin: 0 0 12px;
+  color: #f97316;
+  font-size: 1.25rem;
+}
+
+.snap-alert p {
+  margin: 0 0 22px;
+  color: #e4e4e7;
+  line-height: 1.5;
+}
+
+.snap-alert-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.snap-alert button {
+  padding: 12px 18px;
+  border: 1px solid #f97316;
+  border-radius: 8px;
+  background: #f97316;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.snap-alert button:hover {
+  background: #ea580c;
+}
+
+.snap-alert .snap-alert-secondary {
+  background: transparent;
+  color: #f97316;
+}
+
+.snap-alert .snap-alert-secondary:hover {
+  background: rgba(249, 115, 22, 0.12);
+}
+
+@media (max-width: 420px) {
+  .snap-alert-actions {
+    grid-template-columns: 1fr;
+  }
+}
