@@ -3,6 +3,7 @@ const dotenv = require('dotenv');
 const cors = require('cors');
 const connectDB = require('./config/DB');
 const path = require('path');
+const fs = require('fs');
 
 dotenv.config();
 connectDB();
@@ -23,12 +24,19 @@ app.use('/api/orders', require('./routes/orderRoutes'));
 app.use('/api/payment', require('./routes/paymentRoutes'));
 app.use('/api/analytics', require('./routes/analyticsRoutes'));
 
+const frontendDistPath = path.join(__dirname, '../Frontend/dist');
+const frontendIndexPath = path.join(frontendDistPath, 'index.html');
+
 // Serve frontend in production
 if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../Frontend/dist')));
+  app.use(express.static(frontendDistPath));
   
   app.use((req, res) => {
-    res.sendFile(path.resolve(__dirname, '../Frontend/dist/index.html'));
+    if (!fs.existsSync(frontendIndexPath)) {
+      return res.status(500).send('Frontend build not found. Run "npm run build" before starting the server.');
+    }
+
+    res.sendFile(frontendIndexPath);
   });
 } else {
   app.get('/', (req, res) => {
