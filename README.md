@@ -105,6 +105,8 @@ Add screenshots here.
 Example:
 
 - Home Page
+  <img width="1280" height="606" alt="image" src="https://github.com/user-attachments/assets/2631cbb2-2c52-4ec5-a35e-661708e7b7b4" />
+
 - Product Page
 - Cart
 - Login
