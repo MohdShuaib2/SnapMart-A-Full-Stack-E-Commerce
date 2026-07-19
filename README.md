@@ -100,19 +100,19 @@ npm run dev
 
 ## 📸 Screenshots
 
-Add screenshots here.
-
-Example:
-
 - Home Page
   <img width="1280" height="606" alt="image" src="https://github.com/user-attachments/assets/2631cbb2-2c52-4ec5-a35e-661708e7b7b4" />
 
 - Product Page
+- <img width="1280" height="609" alt="image" src="https://github.com/user-attachments/assets/e6686581-986c-4a51-a8ff-c50d150fa33c" />
 - Cart
+- <img width="1280" height="563" alt="image" src="https://github.com/user-attachments/assets/1af9a2ea-2262-44cb-b2c6-5220e29ed63a" />
 - Login
-- Dashboard
+- <img width="1280" height="660" alt="image" src="https://github.com/user-attachments/assets/bb4ea6fb-5fd9-4f21-aa13-924e39bb9cc2" />
 
----
+- Admin Dashboard
+- <img width="1280" height="599" alt="image" src="https://github.com/user-attachments/assets/6a2d9ee8-8bec-4d54-9d64-e698f9b2185b" />
+
 
 ## 📈 Future Improvements
 
