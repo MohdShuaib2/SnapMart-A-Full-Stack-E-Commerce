@@ -13,7 +13,8 @@
     "dev:server": "cd backend && npm run dev",
     "dev:client": "cd Frontend && npm run dev",
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
-    "build": "cd Frontend && npm run build"
+    "build": "cd Frontend && npm run build",
+    "start": "node backend/server.js"
   },
   "dependencies": {
     "concurrently": "^10.0.3"
