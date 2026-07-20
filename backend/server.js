@@ -4,7 +4,9 @@ const cors = require('cors');
 const connectDB = require('./config/DB');
 const path = require('path');
 const fs = require('fs');
+const dns = require('dns');
 
+dns.setServers(['1.1.1.1', '8.8.8.8']);
 dotenv.config();
 connectDB();
 
