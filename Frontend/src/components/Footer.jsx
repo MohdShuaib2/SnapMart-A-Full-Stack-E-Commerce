@@ -4,10 +4,11 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <footer style={{
-      background: '#09090b',
-      borderTop: '1px solid rgba(255, 255, 255, 0.05)',
+      background: '#ffffff',
+      borderTop: '1px solid #e2e8f0',
       padding: '40px 20px',
-      marginTop: 'auto'
+      marginTop: 'auto',
+      boxShadow: '0 -2px 10px rgba(15, 23, 42, 0.02)'
     }}>
       <div style={{
         maxWidth: '1200px',
@@ -19,17 +20,17 @@ const Footer = () => {
         gap: '20px'
       }}>
         <div>
-          <h3 style={{ color: '#f97316', marginBottom: '10px' }}>SnapMart</h3>
-          <p style={{ color: '#a1a1aa', fontSize: '0.9rem' }}>Premium E-Commerce Platform.</p>
+          <h3 style={{ color: '#ea580c', marginBottom: '8px', fontSize: '1.4rem' }}>SnapMart</h3>
+          <p style={{ color: '#64748b', fontSize: '0.9rem' }}>Premium E-Commerce Platform.</p>
         </div>
         
-        <div style={{ display: 'flex', gap: '20px' }}>
-          <Link to="/about" style={{ color: '#a1a1aa', fontSize: '0.9rem' }}>About Us</Link>
-          <Link to="/return" style={{ color: '#a1a1aa', fontSize: '0.9rem' }}>Return Policy</Link>
-          <Link to="/disclaimer" style={{ color: '#a1a1aa', fontSize: '0.9rem' }}>Disclaimer</Link>
+        <div style={{ display: 'flex', gap: '24px' }}>
+          <Link to="/about" style={{ color: '#64748b', fontSize: '0.9rem', fontWeight: '500' }}>About Us</Link>
+          <Link to="/return" style={{ color: '#64748b', fontSize: '0.9rem', fontWeight: '500' }}>Return Policy</Link>
+          <Link to="/disclaimer" style={{ color: '#64748b', fontSize: '0.9rem', fontWeight: '500' }}>Disclaimer</Link>
         </div>
         
-        <div style={{ color: '#a1a1aa', fontSize: '0.9rem' }}>
+        <div style={{ color: '#94a3b8', fontSize: '0.9rem' }}>
           &copy; {new Date().getFullYear()} SnapMart. All rights reserved.
         </div>
       </div>

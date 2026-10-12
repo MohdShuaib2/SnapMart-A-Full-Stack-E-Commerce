@@ -5,10 +5,10 @@ const About = () => {
     maxWidth: '900px',
     margin: '0 auto',
     padding: '40px',
-    background: '#18181b',
+    background: '#ffffff',
     borderRadius: '16px',
-    border: '1px solid rgba(255, 255, 255, 0.05)',
-    boxShadow: '0 10px 40px rgba(0,0,0,0.5)',
+    border: '1px solid #e2e8f0',
+    boxShadow: '0 10px 40px -5px rgba(15, 23, 42, 0.08)',
     textAlign: 'center'
   };
 
@@ -16,12 +16,13 @@ const About = () => {
     display: 'inline-block',
     margin: '10px',
     padding: '10px 20px',
-    background: '#27272a',
-    color: '#fff',
+    background: '#f8fafc',
+    color: '#0f172a',
     borderRadius: '8px',
     textDecoration: 'none',
     transition: 'all 0.3s ease',
-    border: '1px solid rgba(255, 255, 255, 0.1)'
+    border: '1px solid #cbd5e1',
+    fontWeight: '500'
   };
 
   return (
@@ -29,23 +30,21 @@ const About = () => {
       <img
         src="/dp.jpg"
         alt="@MohdShuaib"
-        style={{ width: '180px', height: '180px', borderRadius: '50%', objectFit: 'cover', border: '4px solid #f97316', marginBottom: '20px', boxShadow: '0 4px 20px rgba(249, 115, 22, 0.4)' }}
+        style={{ width: '180px', height: '180px', borderRadius: '50%', objectFit: 'cover', border: '4px solid #f97316', marginBottom: '20px', boxShadow: '0 4px 20px rgba(249, 115, 22, 0.3)' }}
       />
-      <h2 style={{ fontSize: '2.5rem', marginBottom: '10px', color: '#fff' }}>About Me</h2>
-      <h3 style={{ fontSize: '1.5rem', color: '#f97316', marginBottom: '15px' }}>MohdShuaib (@MohdShuaib)</h3>
+      <h2 style={{ fontSize: '2.5rem', marginBottom: '10px', color: '#0f172a' }}>About Me</h2>
+      <h3 style={{ fontSize: '1.5rem', color: '#ea580c', marginBottom: '15px' }}>MohdShuaib (@MohdShuaib)</h3>
 
-      <p style={{ color: '#a1a1aa', fontSize: '1.2rem', lineHeight: '1.8', maxWidth: '600px', margin: '0 auto 30px auto' }}>
+      <p style={{ color: '#475569', fontSize: '1.2rem', lineHeight: '1.8', maxWidth: '600px', margin: '0 auto 30px auto' }}>
         <strong>Join the community and grow together!</strong> Welcome to my platform where we build, deploy, and scale highly engineered systems.
       </p>
 
       <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '10px', marginTop: '20px' }}>
-        {/* <a href="https://theshivanshvasu.com" target="_blank" rel="noreferrer" style={socialBtnStyle}>🌐 Website</a> */}
-        <a href="https://youtube.com/@mohdshuaib1005?si=61eAKuOeiopXnoME" target="_blank" rel="noreferrer" style={{ ...socialBtnStyle, background: 'rgba(239, 68, 68, 0.2)', borderColor: '#ef4444', color: '#ef4444' }}>📺 YouTube</a>
-        <a href="https://www.instagram.com/shuaib_turk__?igsh=bmpoaGdudDFhdWVl" target="_blank" rel="noreferrer" style={{ ...socialBtnStyle, background: 'rgba(236, 72, 153, 0.2)', borderColor: '#ec4899', color: '#ec4899' }}>📸 Instagram</a>
-        <a href="https://www.linkedin.com/in/mohd-shuaib2" target="_blank" rel="noreferrer" style={{ ...socialBtnStyle, background: 'rgba(59, 130, 246, 0.2)', borderColor: '#3b82f6', color: '#3b82f6' }}>💼 LinkedIn</a>
-        <a href="https://x.com/MohdShuaib09" target="_blank" rel="noreferrer" style={socialBtnStyle}>✖️ X (Twitter)</a>
-        <a href="https://wa.me/917599817616" target="_blank" rel="noreferrer" style={{ ...socialBtnStyle, background: 'rgba(16, 185, 129, 0.2)', borderColor: '#10b981', color: '#10b981' }}>💬 WhatsApp</a>
-        {/* <a href="https://linktr.ee/shivanshvasu" target="_blank" rel="noreferrer" style={socialBtnStyle}>🔗 Linktree</a> */}
+        <a href="https://youtube.com/@mohdshuaib1005?si=61eAKuOeiopXnoME" target="_blank" rel="noreferrer" style={{ ...socialBtnStyle, background: '#fef2f2', borderColor: '#fca5a5', color: '#dc2626' }}>📺 YouTube</a>
+        <a href="https://www.instagram.com/shuaib_turk__?igsh=bmpoaGdudDFhdWVl" target="_blank" rel="noreferrer" style={{ ...socialBtnStyle, background: '#fdf2f8', borderColor: '#f9a8d4', color: '#db2777' }}>📸 Instagram</a>
+        <a href="https://www.linkedin.com/in/mohd-shuaib2" target="_blank" rel="noreferrer" style={{ ...socialBtnStyle, background: '#eff6ff', borderColor: '#93c5fd', color: '#2563eb' }}>💼 LinkedIn</a>
+        <a href="https://x.com/MohdShuaib09" target="_blank" rel="noreferrer" style={{ ...socialBtnStyle, background: '#f8fafc', borderColor: '#cbd5e1', color: '#0f172a' }}>✖️ X (Twitter)</a>
+        <a href="https://wa.me/917599817616" target="_blank" rel="noreferrer" style={{ ...socialBtnStyle, background: '#f0fdf4', borderColor: '#86efac', color: '#16a34a' }}>💬 WhatsApp</a>
       </div>
     </div>
   );

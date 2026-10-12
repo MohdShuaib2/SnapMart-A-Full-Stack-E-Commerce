@@ -1,13 +1,13 @@
 /* Hero Banner */
 .hero-banner {
-  background: radial-gradient(circle at top right, rgba(249, 115, 22, 0.2), transparent 60%), linear-gradient(135deg, #18181b 0%, #09090b 100%);
-  color: white;
-  padding: 100px 30px;
+  background: radial-gradient(circle at top right, rgba(249, 115, 22, 0.12), transparent 50%), linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  color: #0f172a;
+  padding: 80px 30px;
   text-align: center;
   border-radius: 16px;
   margin-bottom: 50px;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-  border: 1px solid rgba(255,255,255,0.05);
+  box-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.05);
+  border: 1px solid #e2e8f0;
   position: relative;
   overflow: hidden;
 }
@@ -15,12 +15,15 @@
 .hero-banner h1 {
   font-size: 3.5rem;
   margin-bottom: 20px;
-  text-shadow: 0 4px 20px rgba(0,0,0,0.8);
+  color: #0f172a;
+  letter-spacing: -1px;
 }
 
 .hero-banner p {
   font-size: 1.2rem;
-  color: #d4d4d8;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 /* Grid & Cards */
@@ -32,12 +35,12 @@
 }
 
 .product-card {
-  background: #18181b;
+  background: #ffffff;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 16px -2px rgba(15, 23, 42, 0.05);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  border: 1px solid rgba(255,255,255,0.03);
+  border: 1px solid #e2e8f0;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -45,7 +48,7 @@
 
 .product-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.5), 0 0 0 1px rgba(249, 115, 22, 0.3);
+  box-shadow: 0 16px 32px -4px rgba(15, 23, 42, 0.1), 0 0 0 1px rgba(249, 115, 22, 0.4);
 }
 
 .product-image {
@@ -53,6 +56,7 @@
   height: 240px;
   object-fit: cover;
   transition: transform 0.5s ease;
+  background-color: #f1f5f9;
 }
 
 .product-card:hover .product-image {
@@ -66,15 +70,16 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: linear-gradient(to top, #18181b 80%, transparent);
+  background: #ffffff;
   position: relative;
   z-index: 2;
+  border-top: 1px solid #f1f5f9;
 }
 
 .product-info h3 {
   font-size: 1.1rem;
   margin-bottom: 10px;
-  color: #fff;
+  color: #0f172a;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -83,7 +88,7 @@
 .price {
   font-size: 22px;
   font-weight: 700;
-  color: #f97316;
+  color: #ea580c;
   margin-bottom: 15px;
 }
 
@@ -93,18 +98,23 @@
   max-width: 500px;
   padding: 15px 20px;
   margin-bottom: 30px;
-  background: #18181b;
-  border: 1px solid #27272a;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
   border-radius: 8px;
-  color: #fafafa;
+  color: #0f172a;
   font-size: 16px;
   transition: all 0.3s ease;
   outline: none;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
+}
+
+.search-bar::placeholder {
+  color: #94a3b8;
 }
 
 .search-bar:focus {
   border-color: #f97316;
-  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.1);
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.15);
 }
 
 /* Detail Page */
@@ -112,17 +122,19 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
-  background: #18181b;
+  background: #ffffff;
   padding: 40px;
   border-radius: 16px;
-  border: 1px solid #27272a;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.06);
 }
 
 .detail-image {
   width: 100%;
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  box-shadow: 0 8px 24px -4px rgba(15, 23, 42, 0.08);
   object-fit: cover;
+  border: 1px solid #e2e8f0;
 }
 
 .detail-info {
@@ -134,17 +146,18 @@
 .detail-info h2 {
   font-size: 2.5rem;
   margin-bottom: 15px;
+  color: #0f172a;
 }
 
 .detail-price {
   font-size: 2rem;
-  color: #f97316;
+  color: #ea580c;
   font-weight: 700;
   margin-bottom: 25px;
 }
 
 .detail-info p {
-  color: #a1a1aa;
+  color: #475569;
   line-height: 1.7;
   font-size: 1.1rem;
   margin-bottom: 30px;

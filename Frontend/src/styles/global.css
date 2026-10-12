@@ -7,9 +7,26 @@
   font-family: 'Outfit', sans-serif;
 }
 
+:root {
+  --bg-main: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-surface: #f1f5f9;
+  --border-color: #e2e8f0;
+  --border-subtle: rgba(0, 0, 0, 0.06);
+  --text-primary: #0f172a;
+  --text-secondary: #64748b;
+  --text-muted: #94a3b8;
+  --accent-primary: #f97316;
+  --accent-hover: #ea580c;
+  --accent-glow: rgba(249, 115, 22, 0.25);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03);
+  --shadow-md: 0 4px 16px -2px rgba(15, 23, 42, 0.06), 0 2px 6px -1px rgba(15, 23, 42, 0.04);
+  --shadow-lg: 0 12px 32px -4px rgba(15, 23, 42, 0.08), 0 4px 12px -2px rgba(15, 23, 42, 0.04);
+}
+
 body {
-  background-color: #09090b;
-  color: #fafafa;
+  background-color: var(--bg-main);
+  color: var(--text-primary);
   min-height: 100vh;
   overflow-x: hidden;
 }
@@ -43,15 +60,15 @@ ul {
   font-size: 15px;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 14px rgba(234, 88, 12, 0.3);
+  box-shadow: 0 4px 14px rgba(234, 88, 12, 0.25);
   display: inline-block;
   text-align: center;
 }
 
 .btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(234, 88, 12, 0.5);
-  filter: brightness(1.1);
+  box-shadow: 0 6px 20px rgba(234, 88, 12, 0.4);
+  filter: brightness(1.05);
 }
 
 .btn:active {
@@ -63,11 +80,12 @@ h1, h2, h3, h4 {
   font-weight: 700;
   letter-spacing: -0.5px;
   margin-bottom: 20px;
+  color: var(--text-primary);
 }
 
 h2 {
   font-size: 2.2rem;
-  background: linear-gradient(to right, #ffffff, #a1a1aa);
+  background: linear-gradient(135deg, #0f172a 0%, #334155 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -84,12 +102,12 @@ h2 {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #09090b; 
+  background: #f1f5f9; 
 }
 ::-webkit-scrollbar-thumb {
-  background: #27272a; 
+  background: #cbd5e1; 
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #3f3f46; 
+  background: #94a3b8; 
 }
